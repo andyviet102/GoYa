@@ -1,0 +1,89 @@
+
+/* header topbar css */
+.header-topbar{
+    display: flex;
+    height: 40px;
+    padding: 0 30px;
+    background-color: #282828;
+}
+.header-topbar__left,
+.header-topbar__right{
+    width: 50%;
+}
+
+.topbar__left-list{
+    display: flex;
+}
+
+.topbar__left-item{
+    list-style: none;
+    margin-right: 5px;
+}
+
+.topbar__left-link{
+    display: block;
+    padding: 0 8px;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--white-color);
+    line-height: 40px;
+}
+
+.topbar__left-link:hover{
+    color: chocolate;
+}
+
+.topbar__left-icon{
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.header-topbar__right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topbar-btn{
+    position: relative;
+    display: block;
+    font-size: 13px;
+    color: var(--white-color);
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.topbar-btn:hover .language-list{
+    display: block;
+ }
+
+.language-list{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    list-style: none;
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    transform-origin: top;
+    animation: fadeIn ease-in-out .2s;
+    z-index: 111;
+    display: none;
+}
+
+.language-item{
+
+}
+
+.language-link{
+    display: block;
+    padding: 14px 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: right;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.language-link:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
